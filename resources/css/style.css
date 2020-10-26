@@ -1,0 +1,301 @@
+header {
+  height: 64px;
+  font-size: 1.5em;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  height: 32px;
+  margin-right: 24px;
+  margin-top: 32px;
+}
+
+
+header .logo span {
+  color: darkgray;
+}
+
+header .logo span strong{
+  color: black;
+}
+
+.spacer {
+  flex-grow: 1;
+}
+
+nav {
+  display: inline;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-right: 16px;
+}
+
+/* Change the link color to #111 (black) on hover */
+
+li a:hover {
+  background-color: darkgray;
+  color: white;
+}
+
+
+.startHere {
+  background-color: gainsboro;
+  color: rgb(51, 50, 50);
+  display: flex;
+}
+
+.banner {
+  height: 30%;
+  width: 60%;
+  margin: 32px 24px;
+}
+
+.text-column {
+  margin-left: 24px;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.text-column .btn {
+  margin-top: 20px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.text-column .btn a {
+  border: 2px solid dimgray;
+  display: flex;
+  justify-content: center;
+  background-color: dimgray;
+  color: white;
+  padding: 16px;
+  width: 80%;
+  text-decoration: none;
+}
+
+.text-column .btn a:hover{
+  background-color: white;
+  color: dimgray;
+}
+
+.info{
+  display: flex;
+  background-color: white;
+}
+
+.info .leftSide{
+  margin: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.info .leftSide img{
+  width: 100%;
+  height: auto;
+}
+
+.infot .leftSide .textInfo{
+  margin: 32px 0 24px 0;;
+}
+
+.info .leftSide p{
+  white-space: pre-line;
+  font-size: 1.3rem;
+}
+
+.info .leftSide .quoted {
+  margin: 20px 0;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.info .rightSide {
+  width: 50%;
+  border-left: dimgray 1px solid;
+}
+
+.info .rightSide .articles {
+  display: flex;
+}
+
+
+.info .rightSide .articles img {
+  max-width: 200px;
+  height: 200px;
+  margin: 16px;
+}
+
+.info .rightSide .articles .textInfo {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2em;
+}
+
+.guestLecture {
+  background-color: gainsboro;
+  color: rgb(51, 50, 50);
+}
+
+.subjects {
+  background-color: gainsboro;
+  padding-bottom: 16px;
+}
+
+.subjects h1 {
+  font-size: 48px;
+  color: rgb(51, 50, 50);
+  padding: 32px 0 16px 0;
+  text-align: center;
+  margin-top: 0;
+}
+
+/* Per riferimenti sulla griglia: 
+https://stackoverflow.com/questions/55738082/how-to-make-a-flexible-2x3-grid-using-flexbox */
+
+.wrapper {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  margin: 32px 72px;
+}
+
+.row {
+  display: flex;
+  flex: 1; /* added */
+}
+
+.course {
+  margin-right: 32px;
+  flex: 1; /* added */
+}
+
+.course-img {
+  width: 100%;
+  height: auto;
+}
+
+.course-img img{
+  width: 100%;
+  height: auto;
+}
+
+.course h2,
+.course h3 {
+  font-weight: bold;
+  color: rgb(51, 50, 50);
+}
+
+.course p {
+  font-weight: normal;
+  color: rgb(51, 50, 50);
+}
+
+.thesisExhibit h1 {
+  padding: 32px 0 16px 0;
+  text-align: center;
+  margin-top: 0;
+  font-size: 48px;
+}
+
+.thesisExhibit-content {
+  display: flex;
+}
+
+.thesisExhibit-content .leftSide {
+  width: 60%;
+  margin: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.thesisExhibit-content video {
+  width: 100%;
+  height: auto;
+}
+
+.thesisExhibit-txt {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2em;
+}
+
+.thesisExhibit-txt h1{
+  text-align: left;
+  padding: 0;
+  margin: 16px 0px;
+}
+
+.thesisExhibit-content .rightSide .articles{
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 16px;
+}
+
+.thesisExhibit-content .rightSide .articles img{
+  width: 33%;
+  height: 33%;
+}
+
+.thesisExhibit-content .rightSide .articles .textInfo {
+  margin: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.thesisExhibit-content .rightSide .articles-fisma {
+  background-color: gainsboro;
+  color: black;
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 16px;
+}
+
+.thesisExhibit-content .rightSide .articles-fisma .textInfo{
+  margin: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.thesisExhibit-content .rightSide .articles-fisma img{
+  width: 33%;
+  height: 33%;
+}
+
+footer {
+  padding: 0 24px;
+  border-top: 1px solid dimgray;
+  display: flex;
+  justify-content: space-between;
+  }
+
+footer a {
+  display: inline-block;
+  margin: 16px 0 0 16px;
+  text-decoration: underline;
+}
+
